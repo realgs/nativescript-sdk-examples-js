@@ -36,6 +36,7 @@
     "babel-traverse": "6.26.0",
     "babel-types": "6.26.0",
     "babylon": "6.18.0",
+    "chai": "^4.1.2",
     "clean-webpack-plugin": "~0.1.19",
     "copy-webpack-plugin": "~4.5.1",
     "css-loader": "~0.28.11",
@@ -44,6 +45,10 @@
     "fs-extra": "^0.30.0",
     "lazy": "1.0.11",
     "markdown-snippet-injector": "^0.2.0",
+    "mocha": "^5.2.0",
+    "mocha-junit-reporter": "^1.17.0",
+    "mocha-multi": "^1.0.1",
+    "nativescript-dev-appium": "file:../nativescript-dev-appium",
     "nativescript-dev-webpack": "^0.13.0",
     "nativescript-worker-loader": "~0.9.0",
     "raw-loader": "~0.5.1",
@@ -61,6 +66,7 @@
     "build": "node scripts/build.js",
     "postbuild": "npm run inject && npm run archive",
     "inject": "mdinject --root=app --docsroot=dist/cookbook --sourceext=\".js|.css|.xml\" --snippettitles=\"JavaScript|CSS|XML\"",
-    "archive": "node scripts/archive.js"
+    "archive": "node scripts/archive.js",
+    "e2e": "mocha --opts ./e2e/config/mocha.opts"
   }
 }
