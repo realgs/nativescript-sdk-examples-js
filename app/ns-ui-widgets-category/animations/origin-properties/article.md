@@ -1,4 +1,4 @@
-To obtain more control over our animations, we can use `originX` and `originY`proeprties. 
+To obtain more control over our animations, we can use `originX` and `originY` properties. 
 - `originX`gets or sets the X component of the origin point around which the view will be transformed. The default value is 0.5 representing the centre of the view.
 - `originY`gets or sets the Y component of the origin point around which the view will be transformed. The default value is 0.5 representing the centre of the view.
 
